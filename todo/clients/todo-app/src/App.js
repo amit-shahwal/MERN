@@ -4,11 +4,11 @@ import axios from 'axios';
 
 export default class PersonList extends React.Component {
   state = {
-    title: '',
+    todo: '',
   }
 
   handleChange = event => {
-    this.setState({ tile: event.target.value });
+    this.setState({ todo: event.target.value });
   }
 
   handleSubmit = event => {
@@ -40,7 +40,7 @@ export default class PersonList extends React.Component {
           </label>
           <button type="submit">Add</button>
         </form>
-    <h3>{this.state.title}</h3>
+    <h3>{this.state.todo}</h3>
       </div>
     )
   }

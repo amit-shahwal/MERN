@@ -31,7 +31,10 @@ app.get('/todo',(req,res)=>{
     .catch((err)=>console.log("Err"))
 })
 app.post('/addTodo',(req,res)=>{
-   
+   var data1=req.body
+    const todoItem = new todo(data1)
+    console.log(req.body);// this payload from react side is having the proper todo object : output=>  { payload: { todo: 'Trail' } }
+    console.log(todoItem);// this object just having the id   : output=> { _id: 5f930e0f3f6c523d9c4164f0 }
 }
 )
 // async function makeGetRequest() {

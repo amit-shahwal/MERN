@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin: 1%;
+}
+h1{
+    float: left;
+    
+}
+.board-container
+{
+    position: relative;
+    width: 98%;
+    height: 85%;
+  
+}
+.tools-section
+{   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tools-section > div
+{
+    margin: 5px 15px;
+}
+#pen{
+    
+    width: 36px;
+    height: 36px;
+}
+
+#eraser
+{
+    width: 36px;
+    height: 36px;
+    border: solid 1px lightblue;
+    background-color: black;
+    border-radius: 8px;
+}
+#color-picker
+{
+    width: 36px;
+    height: 36px;
+    border: none;
+}
+.select-size
+{
+    width: 200px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+.select-size > option
+{
+    background-color: black;
+    color: white;
+    font-size: medium;
+}
+.hoverEff{
+    transition: all 0.5s ease;
+}
+.hoverEff:hover
+{
+    transform: translateY(5px);
+    /* border-bottom: teal 1px solid; */
+}
+
